@@ -7,7 +7,7 @@ function App() {
     <div className="App">
         <header>
           <h1>
-              Northview Homework Matrix Login Page
+              <header> The Northview Homework Matrix</header> <br></br> Student/Parent <br></br> and Teacher Page
               
           </h1>
         </header>
