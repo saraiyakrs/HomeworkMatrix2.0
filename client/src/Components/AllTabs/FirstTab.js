@@ -11,7 +11,6 @@ const FirstTab = () => {
 
       <p>LOGIN IN BEFORE ACESSING COURSES AND ASSIGNMENTS</p>
       <li><a href="#login">LOGIN</a></li>
-
       {/* First tab content will go here */}
      
       
