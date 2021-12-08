@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FirstTab from "../AllTabs/FirstTab";
 import SecondTab from "../AllTabs/SecondTab";
-
+import Login from "../AllTabs/Login";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -13,6 +13,7 @@ const Tabs = () => {
     // update the state to tab2
     setActiveTab("tab2");
   };
+  
   <ul className="nav">
     <li className={activeTab === "tab1" ? "active" : ""}>Tab 1</li>
     <li className={activeTab === "tab2" ? "active" : ""}>Tab 2</li>
@@ -24,18 +25,19 @@ const Tabs = () => {
     className={activeTab === "tab1" ? "active" : ""}
     onClick={handleTab1}
   >
-    STUDENT/PARENT
+    STUDENT/TEACHER LINKS
   </li>
   <li
     className={activeTab === "tab2" ? "active" : ""}
     onClick={handleTab2}
   >
-    TEACHER
+   LOGIN FOR STUDENTS AND TEACHERS
+    
   </li>
 </ul>
 
       <div className="outlet">
-        {activeTab === "tab1" ? <FirstTab /> : <SecondTab />}
+        {activeTab === "tab1" ? <FirstTab /> : (activeTab === "tab2" ? <SecondTab /> : <Login/>)}
       </div>
 
 

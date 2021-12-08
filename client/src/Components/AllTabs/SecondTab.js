@@ -1,16 +1,20 @@
 import React from "react";
+
 const SecondTab = () => {
   return (
     <div className="SecondTab">
-      <p>FOR TEACHERS ONLY</p>
+      <p>LOGIN</p>
       {/* Second  tab content will go here */}
       <ul>
-        <li><a href="https://sylvania.schoology.com/home" target="_blank">SCHOOLOGY</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/1l60K99adjO2rzIJFyoQwgsqnL9hDHJtBD5l9Mp3Qpe8/edit#gid=1583002944" target="_blank">HW Matrix</a></li>
-        <li><a href="" target="_blank"> ASSIGNMENT/SCHEDULE DASHBOARD EDITOR   </a></li>
-
+        <li><a><button>STUDENT LOGIN</button></a></li>
+        <li><a><button>TEACHER LOGIN</button></a></li>
       </ul>
+      <div>
+        
+      </div>
     </div>
+    
+    
   );
 };
 export default SecondTab;
