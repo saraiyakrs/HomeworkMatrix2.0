@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from 'react';
+import Schedule from "../Schedule";
+import Login from "../AllTabs/Login";
 
-const SecondTab = () => {
+
+
+const SecondTab = (id, submitLoginIn) => {
+  const [isLoggedIn,setLoggedIn] = useState(false)
   return (
     <div className="SecondTab">
-      <p>LOGIN</p>
+      
       {/* Second  tab content will go here */}
-      <ul>
-        <li><a><button>STUDENT LOGIN</button></a></li>
-        <li><a><button>TEACHER LOGIN</button></a></li>
-      </ul>
-      <div>
-        
-      </div>
+      {
+        isLoggedIn ? <Schedule /> : <Login id={Login.id}
+        setLoggedIn={setLoggedIn} />
+
+
+      }
+     
     </div>
     
-    
+
   );
 };
 export default SecondTab;

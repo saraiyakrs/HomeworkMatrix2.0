@@ -9,19 +9,21 @@ function App() {
     <div className="App">
       <header>
         <h1>
-          <header> The Northview Homework Matrix DataBase</header> <br>
+          <header> The Northview Homework Matrix Student Site</header> <br>
           </br>
 
-          <Login />
+          
+         
+
         </h1>
+        
       </header>
       <Tabs />
-      <div>
-        <form onsubmit="console.log('You clicked submit.'); return false">
-          <button type="submit">Submit</button>
-        </form>
       
+      <div>
+       
       </div>
+      
     </div>
 
   );

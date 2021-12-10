@@ -31,13 +31,13 @@ const Tabs = () => {
     className={activeTab === "tab2" ? "active" : ""}
     onClick={handleTab2}
   >
-   LOGIN FOR STUDENTS AND TEACHERS
+   LOGIN FOR STUDENTS
     
   </li>
 </ul>
 
       <div className="outlet">
-        {activeTab === "tab1" ? <FirstTab /> : (activeTab === "tab2" ? <SecondTab /> : <Login/>)}
+        {activeTab === "tab1" ? <FirstTab /> : activeTab === "tab2" ? <SecondTab /> : <Login/>}
       </div>
 
 
