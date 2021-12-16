@@ -1,38 +1,141 @@
+
+/* Remove browser defaults */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+
+/* Tab Container */
+.Tabs {
+  width: 100%;
+  height: 100%;
+  background:black;
+  padding: 2rem 1rem;
+  color:gold;
+  @media (max-width: 769px) {
+  padding: 2rem 0;
+  }
+
+}
+
+/* Tab Navigation */
+ul.nav {
+  width: 70%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+ul.nav li {
+  width: 50%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+ul.nav li:nth-child(2) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+ul.nav li.active {
+  background:grey;
+}
+
+/* First and Second Tab Styles */
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background:gold;
+  padding: 20rem 5rem;
+
+  
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gold;
 }
 
-.App-link {
-  color: #61dafb;
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 50px 16px;
+  text-decoration: none;
+  background-color: gold;
+
+
+}
+li {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #555;
+  background-color: gold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:last-child {
+  border-right: none;
+}
+.rectangle {
+  height: 100px;
+  width: 280px;
+  background-color: green;
+  position: absolute;
+  
+  bottom: 45%;
+  left: 45%;
+}
+
+.wrapper {
+  padding: 5px 20px;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
+}
+
+.table, th, td {
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: black;
 }
