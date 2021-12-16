@@ -14,10 +14,8 @@ app.get('/login',(req,res) => {
 })
 app.post("/login",(req,res) => {
     const {Id} = req.body
-    const query = db.prepare("UPDATE login SET available = 0 WHERE id = ?")
+    const query = db.prepare("INSERT INTO login (id, FirstName, LastName, StudentID) VALUES (?, ?, ?, ?);")
     const result = query.run(Id)
-    INSERT INTO login (id, FirstName, LastName, StudentID)
-    VALUES ('?', '?', '?', '?');
 })
 
 
